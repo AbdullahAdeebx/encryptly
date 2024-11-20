@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptly - File Encryption Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Encryptly</h1>
+
+        <!-- Mode Selection -->
+        <div class="mode-selection">
+            <button class="mode-btn active" data-mode="encrypt">Encrypt</button>
+            <button class="mode-btn" data-mode="decrypt">Decrypt</button>
+        </div>
+
+        <div class="card">
+            <!-- Encryption Section -->
+            <div id="encrypt-section">
+                <div class="step">
+                    <h2>Step 1: Generate Encryption Key</h2>
+                    <button id="generateKey">Generate Key</button>
+                    <div id="keyContainer" class="hidden">
+                        <input type="text" id="keyDisplay" readonly>
+                        <button id="downloadKey">Download Key</button>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h2>Step 2: Select File to Encrypt</h2>
+                    <input type="file" id="encryptFileInput">
+                </div>
+
+                <div class="step">
+                    <h2>Step 3: Encrypt File</h2>
+                    <button id="encryptButton" disabled>Encrypt File</button>
+                </div>
+            </div>
+
+            <!-- Decryption Section -->
+            <div id="decrypt-section" class="hidden">
+                <div class="step">
+                    <h2>Step 1: Enter Decryption Key</h2>
+                    <input type="text" id="decryptKeyInput" placeholder="Paste your decryption key here">
+                    <p class="hint">Or upload key file: <input type="file" id="keyFileInput" accept=".key"></p>
+                </div>
+
+                <div class="step">
+                    <h2>Step 2: Select File to Decrypt</h2>
+                    <input type="file" id="decryptFileInput">
+                </div>
+
+                <div class="step">
+                    <h2>Step 3: Decrypt File</h2>
+                    <button id="decryptButton" disabled>Decrypt File</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
