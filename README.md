@@ -1,5 +1,6 @@
 # Encryptly - File Encryption Tool
 #### Video Demo: https://youtu.be/wvN9KKsSNBE
+#### Live on: http://www.encryptly.adeebabdullah.com/ or https://encryptly.pythonanywhere.com/
 #### Description:
 
 Encryptly is a sophisticated web-based file encryption tool that leverages modern cryptographic techniques to provide secure, user-friendly file encryption and decryption capabilities. Built using Python's robust cryptography library and the Flask web framework, this application demonstrates the practical implementation of symmetric encryption in a web environment. The project aims to make file encryption accessible to users while maintaining high security standards and a seamless user experience.
