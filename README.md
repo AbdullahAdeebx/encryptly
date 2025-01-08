@@ -1,4 +1,4 @@
-# Encryptly - File Encryption Tool
+# Encryptly - File Encryption Tool by Abdullah Adeeb
 #### Video Demo: https://youtu.be/wvN9KKsSNBE
 #### Live on: http://www.encryptly.adeebabdullah.com/ or https://encryptly.pythonanywhere.com/
 #### Description:
